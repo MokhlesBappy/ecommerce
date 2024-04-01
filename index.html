@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="details"></div>
+
+<p id="demo">https://www.w3schools.com/java/tryjava.asp?filename=demo_array_for_each</p>
+
+
+<script>
+let product = {title:"দারুচিনি (৫০ গ্রাম)", price:"৳ 24 টাকা", category:"মসলা", Image:'<img src="mosla1.png" alt="">'}; 
+
+let all = "";
+for (let x in product) {
+  all += product[x] + " ";
+}
+
+document.getElementById("details").innerHTML = all; 
+
+const cars = ["BMW, $255, 2024", "Volvo", "Saab", "Ford"];
+
+let i = 0;
+let text = "";
+while (cars[i]) {
+  text += cars[i] + "<br>";
+  i++;
+}
+
+document.getElementById("demo").innerHTML = text;
+
+
+</script>
+
+</body>
+</html>
